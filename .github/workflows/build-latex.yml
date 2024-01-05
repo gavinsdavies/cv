@@ -16,7 +16,7 @@ jobs:
             gavinsdavies.tex
           latexmk_use_lualatex: true
       - name: Orphan branch commit
-        run:
+        run: |
           git checkout --orphan orphan/lualatex
           git rm -rf .
           git add gavinsdavies.pdf
