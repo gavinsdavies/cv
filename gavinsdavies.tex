@@ -1,0 +1,164 @@
+\documentclass[margin, line]{res}
+
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+\usepackage{fontspec}
+% until orcid is in fontawesome
+\usepackage{orcidlink}
+\usepackage{fontawesome}
+
+
+\pagenumbering{gobble}
+
+\definecolor{darkcerulean}{rgb}{0.03, 0.27, 0.49}
+\definecolor{cobalt}{rgb}{0.0, 0.28, 0.67}
+\definecolor{blue(pigment)}{rgb}{0.2, 0.2, 0.6}
+\definecolor{airforceblue}{rgb}{0.36, 0.54, 0.66}
+\definecolor{coolblack}{rgb}{0.0, 0.18, 0.39}
+\hypersetup{colorlinks=true, urlcolor=darkcerulean}
+
+% Social media links
+\newcommand{\so}{https://stackoverflow.com/users/2180446/gavinsdavies}
+\newcommand{\li}{https://www.linkedin.com/in/gavinsdavies}
+\newcommand{\gh}{https://github.com/gavinsdavies}
+\newcommand{\personalsite}{https://gavinsdavies.com}
+\newcommand{\medium}{https://medium.com/@gavinsdavies}
+\newcommand{\orcid}{0000-0002-5728-5356}
+
+\newcommand{\IU}{https://physics.indiana.edu/}
+\newcommand{\ISU}{https://www.physastro.iastate.edu/}
+\newcommand{\OleMiss}{https://physics.olemiss.edu/}
+\newcommand{\Lancs}{https://www.lancaster.ac.uk/physics/}
+\newcommand{\APS}{https://www.aps.org/}
+
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth=6.0in
+\itemsep=0in
+\parsep=0in
+
+% if using pdflatex:
+% \setlength{\pdfpagewidth}{\paperwidth}
+% \setlength{\pdfpageheight}{\paperheight}
+%
+\newenvironment{list1}{
+	\begin{list}{\ding{113}}{%
+		\setlength{\itemsep}{0in}
+		\setlength{\parsep}{0in} \setlength{\parskip}{0in}
+		\setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+		\setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+	\begin{list}{$\bullet$}{%
+		\setlength{\itemsep}{0in}
+		\setlength{\parsep}{0in} \setlength{\parskip}{0in}
+		\setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+		\setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+\begin{document}
+
+\name{
+    \vspace*{-.5in}
+	{\huge Dr. Gavin S. Davies}
+	\hspace*{.1in}
+	{
+ 	    \href{\li}{\faLinkedin}
+		\href{\gh}{\faGithub}
+		\href{\so}{\faStackOverflow}
+        \orcidlink{\orcid}
+	}
+	\vspace*{.1in}
+	}
+
+\begin{resume}
+\section{\sc Contact Information}
+\vspace{.05in}
+\begin{tabular}{@{}p{3.17in}p{4in}}
+	% street,
+    \href{mailto:gsdavies@olemiss.edu}
+    			{gsdavies@olemiss.edu}
+        & \href{\personalsite}{\personalsite}\\
+        % & Currently working on ...\\
+	% town, zip
+    % phone number
+\end{tabular}
+
+\section{\sc Background}
+
+\begin{list2}
+	\item Experimental High Energy physicist studying neutrino oscillations
+\end{list2}
+
+% \vspace{0.15in}
+\section{\sc Professional Experience}
+
+{\bf \href{\OleMiss}{University of Mississippi}}, Department of Physics \& Astronomy, Oxford, MS USA \\
+\vspace{-.3cm}
+{\em Assistant Professor of Physics}
+    \hfill{Aug. 2019 - Present}\\
+
+\begin{list2}
+\item Teaching and Research
+\end{list2}
+
+{\bf \href{\IU}{Indiana University}},
+	Department of Physics, Bloomington, IN USA \\
+\vspace{-.3cm}
+{\em Postdoctoral Research Fellow}
+	\hfill{Oct. 2015 - Aug. 2019}\\
+{\em Supervisor: Prof. Mark Messier}\\
+
+\begin{list2}
+% \item something
+\item Postdoc work
+% \item 
+\end{list2}
+
+{\bf \href{\ISU}{Iowa State University}},
+	Dept. of Physics, Ames, IA USA \\
+\vspace{-.3cm}
+{\em Postdoc}
+	\hfill{ Oct. 2014 - Aug. 2015}\\
+{\em Supervisor: Prof. Mayly Sanchez}\\
+
+\begin{list2}
+    \item did some things
+\end{list2}
+
+% \vspace{0.15in}
+\section{\sc Education}
+{\bf \href{\Lancs}{Lancaster University}}, PhD Physics \hfill {20XX - 20XX}
+\\
+    %\vspace*{-.15in} % this space is required to make the Universities close together
+    % this is the format for the shorter version
+    \begin{list1}
+		\item[] \emph{Dissertation}: Understanding and calibrating the DS-ECal of ND280 in the T2K project
+		\item[] \emph{PhD Advisor}: Dr. Laura Kormos
+	\end{list1}
+
+{\bf \href{\Lancs}{Lancaster University}}, M.Phys Physics/USA, \textit{2:1}
+\hfill {2009 - 2013}
+\\
+	\vspace*{-.15in}
+    \emph{Dissertation}:  \\
+                
+\vspace{0.15in}
+
+\vspace{0.0in}
+\section{\sc Extracurricular}
+{\href{\APS}{APS}}
+\vspace*{-.0in}
+% List DPF etc here?? Snowmass contribs
+{\em Member} \hfill { 2014 - Present} \\
+\vspace*{-0.3in}
+
+
+
+\vspace{0.2in}
+\centerline{\emph{Referees Available on Request}}
+
+\section{\sc Grants}
+
+\end{resume}
+\end{document}
