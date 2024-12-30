@@ -3,7 +3,7 @@
 \usepackage[usenames, dvipsnames]{color}
 \usepackage{amsmath}
 \usepackage{hyperref}
-
+\usepackage{array}
 \usepackage{fontspec}
 % until orcid is in fontawesome
 \usepackage{orcidlink}
@@ -63,7 +63,7 @@
 	{\huge Dr. Gavin S. Davies}
 	\hspace*{.1in}
 	{
- 	    \href{\li}{\faLinkedin}
+		\href{\li}{\faLinkedin}
 		\href{\gh}{\faGithub}
 		\href{\so}{\faStackOverflow}
         \orcidlink{\orcid}
@@ -74,10 +74,10 @@
 \begin{resume}
 \section{\sc Contact Information}
 \vspace{.05in}
-\begin{tabular}{@{}p{3.17in}p{4in}}
+\begin{tabular}{@{}p{3.17in}>{\raggedleft\arraybackslash}p{2.66in}}
 	% street,
-    \href{mailto:gsdavies@olemiss.edu}
-    			{gsdavies@olemiss.edu}
+	3281 Billet Road, Oxford, MS 38655 & (+1) 331-442-3845\\
+    \href{mailto:gsdavies@olemiss.edu}{gsdavies@olemiss.edu}
         & \href{\personalsite}{\personalsite}\\
         % & Currently working on ...\\
 	% town, zip
