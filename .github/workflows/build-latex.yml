@@ -19,7 +19,7 @@ jobs:
         run: |
           git checkout --orphan orphan/lualatex
           git rm -rf .
-          git add gavinsdavies.pdf
+          git add -f gavinsdavies.pdf
           git -c user.name='GitHub Action' -c user.email='action@github.com' commit -m "Compiled and built pdf version of cv."
       - name: Push changes
         uses: ad-m/github-push-action@master
