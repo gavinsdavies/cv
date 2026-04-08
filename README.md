@@ -76,3 +76,11 @@ latexmk -lualatex -interaction=nonstopmode -halt-on-error gavinsdavies.tex
   build is running with pdfLaTeX; switch to LuaLaTeX.
 - `module 'luaotfload-main' not found`:
   LuaLaTeX components are incomplete; install `texlive-luatex`.
+
+If you still see LuaLaTeX/font loader errors after installing packages, this recovery sequence fixed the issue in this repo:
+
+```bash
+sudo apt install texlive-luatex lmodern texlive-fonts-recommended texlive-latex-extra
+sudo mktexlsr
+latexmk -C && latexmk -g -lualatex -interaction=nonstopmode -halt-on-error gavinsdavies.tex
+```
