@@ -1,0 +1,43 @@
+\documentclass[margin, line]{res}
+
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{hyperref}
+
+\pagenumbering{gobble}
+
+\definecolor{darkcerulean}{rgb}{0.03, 0.27, 0.49}
+\hypersetup{colorlinks=true, urlcolor=darkcerulean}
+
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth=6.0in
+\itemsep=0in
+\parsep=0in
+
+\newenvironment{list2}{
+	\begin{list}{$\bullet$}{%
+		\setlength{\itemsep}{0in}
+		\setlength{\parsep}{0in} \setlength{\parskip}{0in}
+		\setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+		\setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+\begin{document}
+
+\name{
+    \vspace*{-.5in}
+	{\huge Dr. Gavin S. Davies}
+	\vspace*{.1in}
+	}
+
+\begin{resume}
+\section{\sc Select Publications}
+
+\input{publications-curated.tex}
+
+\newpage
+
+{\bf Full INSPIRE Publication List}
+\input{inspire_all_publications.tex}
+
+\end{resume}
+\end{document}
