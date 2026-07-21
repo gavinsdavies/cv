@@ -16,8 +16,10 @@
 *.dvi
 *.xdv
 *-converted-to.*
-# Keep generated CV PDF out of normal dev commits.
+# Keep generated CV PDFs out of normal dev commits.
 gavinsdavies.pdf
+gavinsdavies-cv-only.pdf
+publications.pdf
 # these rules might exclude image files for figures etc.
 # *.ps
 # *.eps
