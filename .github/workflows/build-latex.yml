@@ -18,12 +18,14 @@ jobs:
             publications.tex
           latexmk_use_lualatex: true
       - name: Orphan branch commit
+        if: github.ref == 'refs/heads/main'
         run: |
           git checkout --orphan orphan/lualatex
           git rm -rf .
           git add -f gavinsdavies.pdf gavinsdavies-cv-only.pdf publications.pdf
           git -c user.name='GitHub Action' -c user.email='action@github.com' commit -m "Compiled and built pdf version of cv."
       - name: Push changes
+        if: github.ref == 'refs/heads/main'
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
