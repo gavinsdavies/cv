@@ -2,7 +2,9 @@
 # My Personal CV
 
 [![LaTeX Build Status](https://github.com/gavinsdavies/cv/actions/workflows/build-latex.yml/badge.svg)](https://github.com/gavinsdavies/cv/actions)
-[![PDF](https://img.shields.io/badge/PDF-latest-purple.svg?style=flat)](../orphan/lualatex/gavinsdavies.pdf)
+[![CV PDF](https://img.shields.io/badge/CV-latest-purple.svg?style=flat)](../orphan/lualatex/gavinsdavies.pdf)
+[![CV (no publications) PDF](https://img.shields.io/badge/CV%20(no%20pubs)-latest-purple.svg?style=flat)](../orphan/lualatex/gavinsdavies-cv-only.pdf)
+[![Publications PDF](https://img.shields.io/badge/Publications-latest-purple.svg?style=flat)](../orphan/lualatex/publications.pdf)
 
 ## Build Source Of Truth
 
