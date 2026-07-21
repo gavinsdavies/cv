@@ -14,12 +14,14 @@ jobs:
         with:
           root_file: |
             gavinsdavies.tex
+            gavinsdavies-cv-only.tex
+            publications.tex
           latexmk_use_lualatex: true
       - name: Orphan branch commit
         run: |
           git checkout --orphan orphan/lualatex
           git rm -rf .
-          git add -f gavinsdavies.pdf
+          git add -f gavinsdavies.pdf gavinsdavies-cv-only.pdf publications.pdf
           git -c user.name='GitHub Action' -c user.email='action@github.com' commit -m "Compiled and built pdf version of cv."
       - name: Push changes
         uses: ad-m/github-push-action@master
