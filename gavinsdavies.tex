@@ -57,15 +57,6 @@
 		\setlength{\parsep}{0in} \setlength{\parskip}{0in}
 		\setlength{\topsep}{0in} \setlength{\partopsep}{0in}
 		\setlength{\leftmargin}{0.2in}}}{\end{list}}
-% Flush-left, no-bullet list for long publication entries -- reclaims the
-% left margin that list2's bullet/indent would otherwise waste on wrapped lines.
-\newenvironment{publist}{
-	\begin{list}{}{%
-		\setlength{\itemsep}{0in}
-		\setlength{\parsep}{0in} \setlength{\parskip}{0in}
-		\setlength{\topsep}{0in} \setlength{\partopsep}{0in}
-		\setlength{\leftmargin}{0in} \setlength{\itemindent}{0in}
-		\setlength{\labelwidth}{0in} \setlength{\labelsep}{0in}}}{\end{list}}
 
 % Use sans-serif upright instead of italics for role/context annotations
 % (e.g. `{\em Principal Investigator}`) -- avoids the italic slant.
@@ -492,6 +483,14 @@ Fermilab JETP (Wine \& Cheese) Seminar\\
 
 \ifdefined\cvexcludepubs
 \else
+% Title-above-content style with a narrower margin column, just for this
+% trailing section -- reuses res.cls's own "overlapped" option code path
+% (\ds@overlapped) rather than the document-wide "margin" style used
+% everywhere else, so publications reclaim most of the 1.3in title gutter.
+\makeatletter
+\let\section\unboxed@sectiontitle
+\makeatother
+\newsectionwidth{0.5in}
 \section{\sc Select Publications}
 
 \input{publications-curated.tex}
