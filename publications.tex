@@ -2,17 +2,25 @@
 
 \usepackage[usenames, dvipsnames]{color}
 \usepackage{hyperref}
+\usepackage{fontawesome}
 
 \pagenumbering{gobble}
 
 \definecolor{darkcerulean}{rgb}{0.03, 0.27, 0.49}
 \hypersetup{colorlinks=true, urlcolor=darkcerulean}
 
+\newcommand{\inspire}{https://inspirehep.net/authors/1068224}
+
 \oddsidemargin -.5in
 \evensidemargin -.5in
 \textwidth=6.0in
 \itemsep=0in
 \parsep=0in
+
+% Narrow the section-title margin column before \name/\opening runs, so the
+% title is printed with the same \hoffset the page actually ships out with
+% (see gavinsdavies.tex for the same fix and why the ordering matters).
+\newsectionwidth{0.5in}
 
 \newenvironment{list2}{
 	\begin{list}{$\bullet$}{%
@@ -26,6 +34,10 @@
 \name{
     \vspace*{-.5in}
 	{\huge Dr. Gavin S. Davies}
+	\hspace*{.1in}
+	{
+		\href{\inspire}{\faGraduationCap}
+	}
 	\vspace*{.1in}
 	}
 
@@ -34,7 +46,6 @@
 \makeatletter
 \let\section\unboxed@sectiontitle
 \makeatother
-\newsectionwidth{0.5in}
 \section{\sc Select Publications}
 
 \input{publications-curated.tex}
