@@ -487,7 +487,9 @@ Fermilab JETP (Wine \& Cheese) Seminar\\
 % trailing section -- reuses res.cls's own "overlapped" option code path
 % (\ds@overlapped) rather than the document-wide "margin" style used
 % everywhere else, so publications reclaim most of the 1.3in title gutter.
+\makeatletter
 \let\section\unboxed@sectiontitle
+\makeatother
 \newsectionwidth{0.5in}
 \section{\sc Select Publications}
 
