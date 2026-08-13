@@ -1,0 +1,50 @@
+\documentclass[margin, line]{res}
+
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+
+\pagenumbering{gobble}
+
+\definecolor{darkcerulean}{rgb}{0.03, 0.27, 0.49}
+\hypersetup{colorlinks=true, urlcolor=darkcerulean}
+
+\newcommand{\inspire}{https://inspirehep.net/authors/1068224}
+
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth=6.0in
+\itemsep=0in
+\parsep=0in
+
+\newsectionwidth{0.5in}
+
+\newenvironment{list2}{
+	\begin{list}{$\bullet$}{%
+		\setlength{\itemsep}{0in}
+		\setlength{\parsep}{0in} \setlength{\parskip}{0in}
+		\setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+		\setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+\begin{document}
+
+\name{
+    \vspace*{-.5in}
+	{\huge Dr. Gavin S. Davies}
+	\hspace*{.1in}
+	{
+		\href{\inspire}{\faGraduationCap}
+	}
+	\vspace*{.1in}
+	}
+
+\begin{resume}
+\makeatletter
+\let\section\unboxed@sectiontitle
+\makeatother
+\section{\sc Publications by Experiment}
+
+\input{publications-by-experiment-content.tex}
+
+\end{resume}
+\end{document}

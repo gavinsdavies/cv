@@ -5,6 +5,7 @@
 [![CV PDF](https://img.shields.io/badge/CV-latest-purple.svg?style=flat)](../orphan/lualatex/gavinsdavies.pdf)
 [![CV (no publications) PDF](https://img.shields.io/badge/CV%20(no%20pubs)-latest-purple.svg?style=flat)](../orphan/lualatex/gavinsdavies-cv-only.pdf)
 [![Publications PDF](https://img.shields.io/badge/Publications-latest-purple.svg?style=flat)](../orphan/lualatex/publications.pdf)
+[![Publications by Experiment PDF](https://img.shields.io/badge/Publications%20by%20Experiment-latest-purple.svg?style=flat)](../orphan/lualatex/publications-by-experiment.pdf)
 
 ## Build Source Of Truth
 
